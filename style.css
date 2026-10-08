@@ -1,0 +1,67 @@
+:root {
+  --green: #198754;
+  --dark: #101510;
+}
+
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+.hero-section {
+  background: linear-gradient(135deg, #0d2817 0%, #173f24 55%, #101510 100%);
+  color: white;
+}
+.section-label {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  color: var(--green);
+}
+.players-section { background: #f7f8f7; padding: 3rem 1rem; }
+.players-wrap { max-width: 1200px; margin: 0 auto; }
+.players-heading { text-align: center; margin-bottom: 2rem; }
+.players-heading h2 { font-weight: 700; margin: .5rem 0; }
+.players-heading p { color: #68706a; margin: 0; }
+
+/* TASK 1 — custom CSS only, mobile-first. No Bootstrap layout classes here. */
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.player-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  border: 1px solid #e3e7e3;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 5px 16px rgba(0,0,0,.06);
+}
+.player-card img {
+  width: 86px;
+  height: 86px;
+  flex: 0 0 86px;
+  border-radius: 50%;
+}
+.player-card h3 { font-size: 1.1rem; margin-bottom: .35rem; }
+.player-card p { margin: 0; color: #68706a; font-size: .9rem; }
+
+@media (min-width: 600px) {
+  .players-section { padding: 3.5rem 1.5rem; }
+  .players-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .player-card { padding: 1.25rem; }
+  .player-card img { width: 96px; height: 96px; flex-basis: 96px; }
+}
+
+@media (min-width: 992px) {
+  .players-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+  .player-card { display: block; text-align: center; padding: 1.5rem; }
+  .player-card img { margin: 0 auto 1rem; width: 110px; height: 110px; }
+  .player-card h3 { font-size: 1.2rem; }
+}
+
+.fact-number { font-size: clamp(4rem, 9vw, 7rem); font-weight: 800; line-height: 1; color: #8ee0b5; }
+.card-img-top { height: 180px; object-fit: cover; }
+@media (max-width: 575.98px) { .hero-section h1 { font-size: 2.5rem; } }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Football Hub - responsive web design assignment">
+  <title>Football Hub | Responsive Web Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Football Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <span class="badge text-bg-success mb-3">RESPONSIVE WEB DESIGN</span>
+          <h1 class="display-4 fw-bold">Football is more than a game.</h1>
+          <p class="lead">Discover legendary players, modern football ideas and the moments that make the sport special.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-success btn-lg" href="#players">Meet the players</a>
+            <a class="btn btn-outline-light btn-lg" href="#about">Learn more</a>
+          </div>
+          <p class="small text-white-50 mt-3 d-none d-md-block">Desktop and tablet layout uses Bootstrap's responsive grid.</p>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2">
+          <img src="assets/hero-ball.svg" class="img-fluid rounded-4 shadow" alt="Football on a green pitch">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- TASK 1: This section intentionally uses only custom CSS. -->
+    <section id="players" class="players-section">
+      <div class="players-wrap">
+        <div class="players-heading">
+          <span class="section-label">TASK 1</span>
+          <h2>Players to watch</h2>
+          <p>This section is responsive with our own CSS Grid and mobile-first media queries.</p>
+        </div>
+        <div class="players-grid">
+          <article class="player-card">
+            <img src="assets/messi.svg" alt="Lionel Messi">
+            <div><h3>Lionel Messi</h3><p>Creative forward with exceptional vision and close control.</p></div>
+          </article>
+          <article class="player-card">
+            <img src="assets/mbappe.svg" alt="Kylian Mbappe">
+            <div><h3>Kylian Mbappé</h3><p>Explosive attacker known for speed, finishing and movement.</p></div>
+          </article>
+          <article class="player-card">
+            <img src="assets/haaland.svg" alt="Erling Haaland">
+            <div><h3>Erling Haaland</h3><p>Powerful striker with strong positioning and finishing.</p></div>
+          </article>
+          <article class="player-card">
+            <img src="assets/modric.svg" alt="Luka Modric">
+            <div><h3>Luka Modrić</h3><p>Midfield leader with excellent passing and game control.</p></div>
+          </article>
+          <article class="player-card">
+            <img src="assets/ronaldo.svg" alt="Cristiano Ronaldo">
+            <div><h3>Cristiano Ronaldo</h3><p>Experienced goal scorer with elite movement and mentality.</p></div>
+          </article>
+          <article class="player-card">
+            <img src="assets/vinicius.svg" alt="Vinicius Junior">
+            <div><h3>Vinícius Júnior</h3><p>Dynamic winger who creates danger with pace and dribbling.</p></div>
+          </article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-7 order-2 order-md-1">
+            <span class="section-label">TASK 2</span>
+            <h2 class="fw-bold mt-2">Why responsive design?</h2>
+            <p>Football fans use phones, tablets and laptops every day. A responsive page should keep the content readable and useful at all three sizes.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-dark p-2">Bootstrap Grid</span>
+              <span class="badge rounded-pill text-bg-success p-2">Utilities</span>
+              <span class="badge rounded-pill text-bg-secondary p-2">Mobile-first</span>
+            </div>
+            <p class="small text-secondary mt-3 d-lg-none">This note is shown on smaller screens only.</p>
+          </div>
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/pitch.svg" class="img-fluid rounded-4" alt="Football pitch illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-label">BOOTSTRAP CARDS</span>
+          <h2 class="fw-bold mt-2">Latest football ideas</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/tactics.svg" class="card-img-top" alt="Football tactics">
+              <div class="card-body d-flex flex-column"><h3 class="h5">Modern tactics</h3><p class="card-text">Teams combine pressing, quick transitions and flexible positions.</p><button class="btn btn-outline-success mt-auto" data-bs-toggle="modal" data-bs-target="#detailsModal">Read more</button></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/stadium.svg" class="card-img-top" alt="Football stadium">
+              <div class="card-body d-flex flex-column"><h3 class="h5">Matchday atmosphere</h3><p class="card-text">A stadium brings players and supporters together for one shared experience.</p><button class="btn btn-outline-success mt-auto" data-bs-toggle="modal" data-bs-target="#detailsModal">Read more</button></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/training.svg" class="card-img-top" alt="Football training">
+              <div class="card-body d-flex flex-column"><h3 class="h5">Training habits</h3><p class="card-text">Consistency, recovery and simple technical work build better performances.</p><button class="btn btn-outline-success mt-auto" data-bs-toggle="modal" data-bs-target="#detailsModal">Read more</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Quick football facts</h2>
+            <div class="accordion" id="factsAccordion">
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#factOne">What makes a good team?</button></h3><div id="factOne" class="accordion-collapse collapse show" data-bs-parent="#factsAccordion"><div class="accordion-body">Clear communication, smart movement and consistent teamwork.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#factTwo">Why use a grid?</button></h3><div id="factTwo" class="accordion-collapse collapse" data-bs-parent="#factsAccordion"><div class="accordion-body">A grid makes it easier to change columns at different breakpoints.</div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="fact-number">90+</div>
+            <p class="mb-0">minutes of football, strategy and emotion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold">Keep following the game</h2>
+            <p class="text-secondary">This final section completes the responsive page and keeps the layout simple on every screen.</p>
+            <a href="#home" class="btn btn-success">Back to top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title h5" id="detailsModalLabel">Football Hub</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Bootstrap's modal component gives the page an interactive element without writing the modal behavior from scratch.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button></div></div></div>
+  </div>
+
+  <footer class="py-4 bg-black text-white-50 text-center">
+    <div class="container"><small>Assignment #3 • Responsive Web Design • Sultan Sekerkhanov • IT-2512</small></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
